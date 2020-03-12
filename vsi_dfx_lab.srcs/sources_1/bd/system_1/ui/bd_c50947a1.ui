@@ -1,0 +1,48 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.9",
+   "Default View_TopLeft":"-54,230",
+   "ExpandedHierarchyInLayout":"/u96_pl|/u96_ps",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace inst u96_pl -pg 1 -lvl 2 -x 1078 -y 122 -defaultsOSRD
+preplace inst u96_ps -pg 1 -lvl 1 -x 170 -y 122 -defaultsOSRD
+preplace inst u96_r5 -pg 1 -lvl 2 -x 1078 -y 524 -defaultsOSRD
+preplace inst u96_pl|vsi_context -pg 1 -lvl 1 -x 1138 -y 372 -defaultsOSRD
+preplace inst u96_pl|pr_set_0_0 -pg 1 -lvl 1 -x 1138 -y 132 -defaultsOSRD
+preplace inst u96_pl|pr_set_0_1 -pg 1 -lvl 1 -x 1138 -y 242 -defaultsOSRD
+preplace inst u96_ps|vsi_context -pg 1 -lvl 2 -x 510 -y 142 -defaultsOSRD
+preplace inst u96_ps|display_0 -pg 1 -lvl 1 -x 220 -y 402 -defaultsOSRD
+preplace inst u96_ps|fcorner_shmem -pg 1 -lvl 1 -x 220 -y 132 -defaultsOSRD
+preplace inst u96_ps|minmax_shmem -pg 1 -lvl 1 -x 220 -y 252 -defaultsOSRD
+preplace inst u96_ps|webcam_0 -pg 1 -lvl 2 -x 510 -y 422 -defaultsOSRD
+preplace netloc arg_4_seq_i_1 1 0 3 -70 12 NJ 12 1470
+preplace netloc u96_pl_arg_3_mem 1 0 3 -50 32 NJ 32 1450
+preplace netloc u96_pl_arg_3_mem1 1 0 3 -50 564 NJ 564 1450
+preplace netloc arg_1_seq_i1_1 1 1 1 830 242n
+preplace netloc arg_1_seq_i_1 1 1 1 820 132n
+preplace netloc arg_7_seq_i_1 1 0 3 -60 22 NJ 22 1460
+preplace netloc u96_pl|arg_1_seq_i_1 1 0 1 N 132
+preplace netloc u96_pl|pr_set_0_0_arg_2_seq_o 1 1 1 1288 122n
+preplace netloc u96_pl|pr_set_0_1_arg_3_mem 1 1 1 1298 122n
+preplace netloc u96_pl|pr_set_0_0_arg_3_mem1 1 1 1 N 142
+preplace netloc u96_pl|pr_set_0_1_arg_2_seq_o1 1 1 1 N 252
+preplace netloc u96_pl|arg_1_seq_i1_1 1 0 1 N 242
+preplace netloc u96_ps|vsi_gen_ip_1_arg_3_seq_o 1 2 1 N 392
+preplace netloc u96_ps|vsi_gen_ip_1_arg_2_mem 1 0 3 100 322 NJ 322 680
+preplace netloc u96_ps|arg_4_seq_i_1 1 0 2 NJ 472 340
+preplace netloc u96_ps|vsi_gen_ip_1_arg_6_seq_o 1 2 1 N 412
+preplace netloc u96_ps|port_0_1 1 0 1 N 122
+preplace netloc u96_ps|arg_7_seq_i_1 1 0 2 NJ 492 350
+preplace netloc u96_ps|vsi_gen_ip_1_arg_5_mem 1 0 3 90 332 NJ 332 670
+preplace netloc u96_ps|vsi_gen_ip_0_arg_1_seq_o 1 1 1 NJ 402
+preplace netloc u96_ps|port_1_1 1 0 1 N 242
+levelinfo -pg 1 -90 170 1078 1490
+levelinfo -hier u96_pl * 1138 *
+levelinfo -hier u96_ps * 220 510 *
+pagesize -pg 1 -db -bbox -sgen -90 0 1490 580
+pagesize -hier u96_pl -db -bbox -sgen 958 62 1328 452
+pagesize -hier u96_ps -db -bbox -sgen 60 62 710 512
+"
+}
+0

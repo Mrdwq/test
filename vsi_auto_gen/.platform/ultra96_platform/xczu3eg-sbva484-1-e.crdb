@@ -1,0 +1,20 @@
+clock_regions={
+X0Y0 SLR0
+X1Y0 SLR0
+X0Y1 SLR0
+X1Y1 SLR0
+X0Y2 SLR0
+X1Y2 SLR0
+}
+ps=PS8_X0Y0
+psn={
+X0Y2 SLR0
+X0Y1 SLR0
+X0Y0 SLR0
+}
+package_pins={
+X0Y2 SLR0
+}
+config={
+X1Y1 SLR0
+}

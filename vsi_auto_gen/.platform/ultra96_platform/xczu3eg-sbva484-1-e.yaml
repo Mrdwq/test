@@ -1,0 +1,82 @@
+part: xczu3eg-sbva484-1-e
+slice_resources: 
+  LUTS: 8
+  FFS: 16
+cr_count: 6
+clock_regions: 
+  - name : X0Y0 
+    row: 0
+    col: 0
+    slr: 0
+    dsp: 72
+    slice: 1740
+    ramb18: 72
+    ramb36: 36
+    uram: 0
+  - name : X1Y0 
+    row: 0
+    col: 1
+    slr: 0
+    dsp: 48
+    slice: 1200
+    ramb18: 72
+    ramb36: 36
+    uram: 0
+  - name : X0Y1 
+    row: 1
+    col: 0
+    slr: 0
+    dsp: 72
+    slice: 1740
+    ramb18: 72
+    ramb36: 36
+    uram: 0
+  - name : X1Y1 
+    row: 1
+    col: 1
+    slr: 0
+    dsp: 48
+    slice: 1200
+    ramb18: 72
+    ramb36: 36
+    uram: 0
+  - name : X0Y2 
+    row: 2
+    col: 0
+    slr: 0
+    dsp: 72
+    slice: 1740
+    ramb18: 72
+    ramb36: 36
+    uram: 0
+  - name : X1Y2 
+    row: 2
+    col: 1
+    slr: 0
+    dsp: 48
+    slice: 1200
+    ramb18: 72
+    ramb36: 36
+    uram: 0
+ps:
+  type: 8
+  row: 0
+  col: 0
+psn: 
+  - row: 2
+    col: 0
+    slr: 0
+  - row: 1
+    col: 0
+    slr: 0
+  - row: 0
+    col: 0
+    slr: 0
+package_pins: 
+  - row: 2
+    col: 0
+    slr: 0
+config: 
+  - row: 1
+    col: 1
+    slr: 0

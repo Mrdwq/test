@@ -1,0 +1,33 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.9",
+   "Default View_TopLeft":"-500,-189",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port GPIO_SENSORS -pg 1 -lvl 3 -x 540 -y 70 -defaultsOSRD
+preplace port UART1 -pg 1 -lvl 3 -x 540 -y 90 -defaultsOSRD
+preplace port BT_ctsn -pg 1 -lvl 0 -x -10 -y 20 -defaultsOSRD
+preplace port BT_rtsn -pg 1 -lvl 3 -x 540 -y 110 -defaultsOSRD
+preplace port UART0_ctsn -pg 1 -lvl 0 -x -10 -y 150 -defaultsOSRD
+preplace port UART0_rtsn -pg 1 -lvl 3 -x 540 -y 130 -defaultsOSRD
+preplace port UART0_rxd -pg 1 -lvl 0 -x -10 -y 170 -defaultsOSRD
+preplace port UART0_txd -pg 1 -lvl 3 -x 540 -y 150 -defaultsOSRD
+preplace inst u96_pl -pg 1 -lvl 2 -x 360 -y 110 -defaultsOSRD
+preplace inst u96_ps -pg 1 -lvl 1 -x 100 -y 90 -defaultsOSRD
+preplace inst u96_r5 -pg 1 -lvl 2 -x 360 -y 240 -defaultsOSRD
+preplace netloc BT_ctsn_1 1 0 2 10J 10 200J
+preplace netloc UART0_ctsn_1 1 0 2 20J 20 190J
+preplace netloc UART0_rxd_1 1 0 2 NJ 170 200J
+preplace netloc u96_pl_BT_rtsn 1 2 1 NJ 110
+preplace netloc u96_pl_UART0_rtsn 1 2 1 NJ 130
+preplace netloc u96_pl_UART0_txd 1 2 1 NJ 150
+preplace netloc u96_ps_M_AXI 1 1 1 N 80
+preplace netloc u96_pl_GPIO_SENSORS 1 2 1 NJ 70
+preplace netloc S0_AXI_1 1 1 1 180 100n
+preplace netloc u96_pl_UART1 1 2 1 NJ 90
+levelinfo -pg 1 -10 100 360 540
+pagesize -pg 1 -db -bbox -sgen -150 0 700 290
+"
+}
+0

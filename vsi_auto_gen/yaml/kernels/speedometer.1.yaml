@@ -1,0 +1,76 @@
+draw_speedometer:
+  UserAssignments:
+    unit: ns
+    ProductFamily: zynquplus
+    Part: xczu3eg-sbva484-1-e
+    TopModelName: draw_speedometer
+    TargetClockPeriod: 10.00
+    ClockUncertainty: 1.25
+  PerformanceEstimates:
+    PipelineType: none
+    SummaryOfTimingAnalysis:
+      unit: ns
+      EstimatedClockPeriod: 8.750
+    SummaryOfOverallLatency:
+      unit: clock cycles
+      Best-caseLatency: undef
+      Average-caseLatency: undef
+      Worst-caseLatency: undef
+      Best-caseRealTimeLatency: undef
+      Average-caseRealTimeLatency: undef
+      Worst-caseRealTimeLatency: undef
+      Interval-min: undef
+      Interval-max: undef
+    SummaryOfLoopLatency:
+      loop:
+        VSI_LOOP_36:
+          TripCount:
+            min: 37
+            max: 37
+          Latency:
+            min: undef
+            max: undef
+          IterationLatency:
+            min: undef
+            max: undef
+          loop:
+            VSI_LOOP_29:
+              TripCount:
+                min: undef
+                max: undef
+              Latency:
+                min: undef
+                max: undef
+              PipelineII:
+                min: 233
+                max: 233
+              PipelineDepth:
+                min: 234
+                max: 234
+        VSI_LOOP_29:
+          TripCount:
+            min: undef
+            max: undef
+          Latency:
+            min: undef
+            max: undef
+          PipelineII:
+            min: 233
+            max: 233
+          PipelineDepth:
+            min: 234
+            max: 234
+    Power: 0.703260009765625
+  AreaEstimates:
+    Resources:
+      BRAM_18K: 6
+      DSP48E: 32
+      FF: 4188
+      LUT: 10876
+      URAM: 0
+    AvailableResources:
+      BRAM_18K: 432
+      DSP48E: 360
+      FF: 141120
+      LUT: 70560
+      URAM: 0

@@ -1,0 +1,1168 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "design_src": "vsi_system",
+      "device": "xczu3eg-sbva484-1-e",
+      "name": "system_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2"
+    },
+    "design_tree": {
+      "u96_pl": {
+        "vsi_context": "",
+        "pr_set_0_0": {
+          "min_max": "",
+          "pr_set_0": ""
+        },
+        "pr_set_0_1": {
+          "speedometer": "",
+          "pr_set_0": ""
+        }
+      },
+      "u96_ps": {
+        "vsi_context": "",
+        "display_0": "",
+        "fcorner_shmem": "",
+        "minmax_shmem": "",
+        "webcam_0": ""
+      },
+      "u96_r5": {
+        "vsi_context": ""
+      }
+    },
+    "components": {
+      "u96_pl": {
+        "interface_ports": {
+          "arg_3_mem": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "arg_3_mem1": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "arg_1_seq_i": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "arg_1_seq_i1": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "arg_2_seq_o": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "arg_2_seq_o1": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "components": {
+          "vsi_context": {
+            "vlnv": "vsi.com:platform:vsi_context:1.0",
+            "xci_name": "system_1_vsi_context_0",
+            "parameters": {
+              "LOGO_FILE": {
+                "value": "data/vsi_context_hardware_pr.png"
+              },
+              "OS": {
+                "value": "Linux"
+              },
+              "build_output": {
+                "value": "binary"
+              },
+              "c_compiler_options": {
+                "value": "-std=c11 -static -g -DDEBUG -O0"
+              },
+              "cc_compiler_options": {
+                "value": "-std=c++11 -static -g -DDEBUG -O0 -fpermissive"
+              },
+              "cc_prefix": {
+                "value": "null"
+              },
+              "cpu_type": {
+                "value": "1"
+              },
+              "current_platform": {
+                "value": "ultra96_platform"
+              },
+              "default_fifo_size": {
+                "value": "65536"
+              },
+              "fpga_board": {
+                "value": "em.avnet.com:ultra96v1:part0:1.2"
+              },
+              "fpga_part": {
+                "value": "xczu3eg-sbva484-1-e"
+              },
+              "hostname": {
+                "value": "localhost"
+              },
+              "impl_strategy": {
+                "value": "default"
+              },
+              "include_directories": {
+                "value": "$(XFOPENCV)/include,"
+              },
+              "ip_build_in": {
+                "value": "false"
+              },
+              "is_cc": {
+                "value": "false"
+              },
+              "is_main": {
+                "value": "true"
+              },
+              "is_system_gui": {
+                "value": "true"
+              },
+              "language": {
+                "value": "hls"
+              },
+              "load_on_demand": {
+                "value": "true"
+              },
+              "map_exposed": {
+                "value": "api"
+              },
+              "map_port": {
+                "value": "1999"
+              },
+              "no_dma": {
+                "value": "false"
+              },
+              "num_cpus": {
+                "value": "1"
+              },
+              "platform_power": {
+                "value": "0"
+              },
+              "python_version": {
+                "value": "2"
+              },
+              "reserve_crs": {
+                "value": "3"
+              },
+              "rt_build_type": {
+                "value": "1"
+              },
+              "simulator": {
+                "value": "1"
+              },
+              "synthesis_mode": {
+                "value": "1"
+              },
+              "target_platform": {
+                "value": "standard"
+              },
+              "trace_divisor": {
+                "value": "8"
+              },
+              "trace_frequency": {
+                "value": "50"
+              },
+              "trace_poll_timer": {
+                "value": "100000"
+              },
+              "type": {
+                "value": "2"
+              },
+              "use_opencv": {
+                "value": "false"
+              },
+              "use_v4l": {
+                "value": "false"
+              },
+              "use_xdma": {
+                "value": "false"
+              }
+            }
+          },
+          "pr_set_0_0": {
+            "interface_ports": {
+              "arg_1_seq_i": {
+                "mode": "Slave",
+                "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+              },
+              "arg_2_seq_o": {
+                "mode": "Master",
+                "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+              },
+              "arg_3_mem1": {
+                "mode": "Master",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              }
+            },
+            "components": {
+              "min_max": {
+                "vlnv": "vsi.com:soft_ip:vsi_gen_ip:1.0",
+                "xci_name": "system_1_vsi_gen_ip_0_0",
+                "parameters": {
+                  "C_FUNC_NAME": {
+                    "value": "min_max_shmem {type CXX_SRC file {$(VSI_INSTALL)/target/common/hls_examples/image_algos/image_algos.cc} includes {strings.h math.h hls_stream.h vsi_device.h common/xf_common.h common/xf_utility.h core/xf_min_max_loc.hpp imgproc/xf_median_blur.hpp imgproc/xf_gaussian_filter.hpp imgproc/xf_mean_shift.hpp imgproc/xf_dilation.hpp imgproc/xf_erosion.hpp imgproc/xf_canny.hpp imgproc/xf_edge_tracing.hpp features/xf_fast.hpp ap_int.h image_algos.h math.h } ret void args {start {tname \"hls::stream<st> &\" tsize -2 ttype \"LValueReference\" tattr \"data last\"} done {tname \"hls::stream<st> &\" tsize -2 ttype \"LValueReference\" tattr \"data last\"} io_frame {tname \"uint32_t [19200]\" tsize 76800 ttype \"ConstantArray\" tattr \"\"} }}"
+                  },
+                  "ENV_SOURCE_DIR": {
+                    "value": "$(VSI_INSTALL)/target/common/hls_examples/image_algos,"
+                  },
+                  "NUM_PARAMS": {
+                    "value": "3"
+                  },
+                  "P00_change_trigger": {
+                    "value": "true"
+                  },
+                  "P00_param_ctype": {
+                    "value": "hls::stream<st> &"
+                  },
+                  "P00_param_name": {
+                    "value": "start"
+                  },
+                  "P00_param_size": {
+                    "value": "-2"
+                  },
+                  "P00_param_type": {
+                    "value": "3"
+                  },
+                  "P00_sideband": {
+                    "value": "data last"
+                  },
+                  "P01_param_ctype": {
+                    "value": "hls::stream<st> &"
+                  },
+                  "P01_param_dir": {
+                    "value": "2"
+                  },
+                  "P01_param_name": {
+                    "value": "done"
+                  },
+                  "P01_param_size": {
+                    "value": "-2"
+                  },
+                  "P01_param_type": {
+                    "value": "3"
+                  },
+                  "P01_sideband": {
+                    "value": "data last"
+                  },
+                  "P02_param_access": {
+                    "value": "3"
+                  },
+                  "P02_param_ctype": {
+                    "value": "uint32_t [19200]"
+                  },
+                  "P02_param_dir": {
+                    "value": "3"
+                  },
+                  "P02_param_name": {
+                    "value": "io_frame"
+                  },
+                  "P02_param_size": {
+                    "value": "76800"
+                  },
+                  "P02_param_type": {
+                    "value": "2"
+                  },
+                  "P03_param_size": {
+                    "value": "0"
+                  },
+                  "P04_param_size": {
+                    "value": "0"
+                  },
+                  "P05_param_size": {
+                    "value": "0"
+                  },
+                  "P06_param_size": {
+                    "value": "0"
+                  },
+                  "P07_param_size": {
+                    "value": "0"
+                  },
+                  "P08_param_size": {
+                    "value": "0"
+                  },
+                  "P09_param_size": {
+                    "value": "0"
+                  },
+                  "P0A_param_size": {
+                    "value": "0"
+                  },
+                  "P0B_param_size": {
+                    "value": "0"
+                  },
+                  "P0C_param_size": {
+                    "value": "0"
+                  },
+                  "P0D_param_size": {
+                    "value": "0"
+                  },
+                  "P0E_param_size": {
+                    "value": "0"
+                  },
+                  "P0F_param_size": {
+                    "value": "0"
+                  },
+                  "SOURCE_DIR": {
+                    "value": "/home/dwq/Documents/Systemview/VSI/target/common/hls_examples/image_algos,"
+                  }
+                }
+              },
+              "pr_set_0": {
+                "vlnv": "vsi.com:context:pr_set:1.0",
+                "xci_name": "system_1_pr_set_0_4"
+              }
+            },
+            "interface_nets": {
+              "Conn1": {
+                "interface_ports": [
+                  "arg_1_seq_i",
+                  "min_max/arg_1_seq_i"
+                ]
+              },
+              "Conn2": {
+                "interface_ports": [
+                  "arg_2_seq_o",
+                  "min_max/arg_2_seq_o"
+                ]
+              },
+              "Conn3": {
+                "interface_ports": [
+                  "arg_3_mem1",
+                  "min_max/arg_3_mem"
+                ]
+              }
+            }
+          },
+          "pr_set_0_1": {
+            "interface_ports": {
+              "arg_1_seq_i1": {
+                "mode": "Slave",
+                "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+              },
+              "arg_3_mem": {
+                "mode": "Master",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              },
+              "arg_2_seq_o1": {
+                "mode": "Master",
+                "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+              }
+            },
+            "components": {
+              "speedometer": {
+                "vlnv": "vsi.com:soft_ip:vsi_gen_ip:1.0",
+                "xci_name": "system_1_vsi_gen_ip_1_0",
+                "parameters": {
+                  "C_FUNC_NAME": {
+                    "value": "draw_speedometer {type CXX_SRC file {$(VSI_INSTALL)/target/common/hls_examples/image_algos/image_algos.cc} includes {strings.h math.h hls_stream.h vsi_device.h common/xf_common.h common/xf_utility.h core/xf_min_max_loc.hpp imgproc/xf_median_blur.hpp imgproc/xf_gaussian_filter.hpp imgproc/xf_mean_shift.hpp imgproc/xf_dilation.hpp imgproc/xf_erosion.hpp imgproc/xf_canny.hpp imgproc/xf_edge_tracing.hpp features/xf_fast.hpp ap_int.h image_algos.h math.h } ret void args {start {tname \"hls::stream<st> &\" tsize -2 ttype \"LValueReference\" tattr \"data last\"} done {tname \"hls::stream<st> &\" tsize -2 ttype \"LValueReference\" tattr \"data last\"} io_frame {tname \"uint32_t [19200]\" tsize 76800 ttype \"ConstantArray\" tattr \"\"} }}"
+                  },
+                  "ENV_SOURCE_DIR": {
+                    "value": "$(VSI_INSTALL)/target/common/hls_examples/image_algos,"
+                  },
+                  "NUM_PARAMS": {
+                    "value": "3"
+                  },
+                  "P00_change_trigger": {
+                    "value": "true"
+                  },
+                  "P00_param_ctype": {
+                    "value": "hls::stream<st> &"
+                  },
+                  "P00_param_name": {
+                    "value": "start"
+                  },
+                  "P00_param_size": {
+                    "value": "-2"
+                  },
+                  "P00_param_type": {
+                    "value": "3"
+                  },
+                  "P00_sideband": {
+                    "value": "data last"
+                  },
+                  "P01_param_ctype": {
+                    "value": "hls::stream<st> &"
+                  },
+                  "P01_param_dir": {
+                    "value": "2"
+                  },
+                  "P01_param_name": {
+                    "value": "done"
+                  },
+                  "P01_param_size": {
+                    "value": "-2"
+                  },
+                  "P01_param_type": {
+                    "value": "3"
+                  },
+                  "P01_sideband": {
+                    "value": "data last"
+                  },
+                  "P02_param_access": {
+                    "value": "3"
+                  },
+                  "P02_param_ctype": {
+                    "value": "uint32_t [19200]"
+                  },
+                  "P02_param_dir": {
+                    "value": "3"
+                  },
+                  "P02_param_name": {
+                    "value": "io_frame"
+                  },
+                  "P02_param_size": {
+                    "value": "76800"
+                  },
+                  "P02_param_type": {
+                    "value": "2"
+                  },
+                  "P03_param_size": {
+                    "value": "0"
+                  },
+                  "P04_param_size": {
+                    "value": "0"
+                  },
+                  "P05_param_size": {
+                    "value": "0"
+                  },
+                  "P06_param_size": {
+                    "value": "0"
+                  },
+                  "P07_param_size": {
+                    "value": "0"
+                  },
+                  "P08_param_size": {
+                    "value": "0"
+                  },
+                  "P09_param_size": {
+                    "value": "0"
+                  },
+                  "P0A_param_size": {
+                    "value": "0"
+                  },
+                  "P0B_param_size": {
+                    "value": "0"
+                  },
+                  "P0C_param_size": {
+                    "value": "0"
+                  },
+                  "P0D_param_size": {
+                    "value": "0"
+                  },
+                  "P0E_param_size": {
+                    "value": "0"
+                  },
+                  "P0F_param_size": {
+                    "value": "0"
+                  },
+                  "SOURCE_DIR": {
+                    "value": "/home/dwq/Documents/Systemview/VSI/target/common/hls_examples/image_algos,"
+                  }
+                }
+              },
+              "pr_set_0": {
+                "vlnv": "vsi.com:context:pr_set:1.0",
+                "xci_name": "system_1_pr_set_0_6",
+                "parameters": {
+                  "lod_id": {
+                    "value": "1"
+                  }
+                }
+              }
+            },
+            "interface_nets": {
+              "Conn2": {
+                "interface_ports": [
+                  "arg_3_mem",
+                  "speedometer/arg_3_mem"
+                ]
+              },
+              "Conn1": {
+                "interface_ports": [
+                  "arg_1_seq_i1",
+                  "speedometer/arg_1_seq_i"
+                ]
+              },
+              "Conn3": {
+                "interface_ports": [
+                  "arg_2_seq_o1",
+                  "speedometer/arg_2_seq_o"
+                ]
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "pr_set_0_0_arg_2_seq_o": {
+            "interface_ports": [
+              "arg_2_seq_o",
+              "pr_set_0_0/arg_2_seq_o"
+            ]
+          },
+          "arg_1_seq_i1_1": {
+            "interface_ports": [
+              "arg_1_seq_i1",
+              "pr_set_0_1/arg_1_seq_i1"
+            ]
+          },
+          "pr_set_0_1_arg_3_mem": {
+            "interface_ports": [
+              "arg_3_mem",
+              "pr_set_0_1/arg_3_mem"
+            ]
+          },
+          "arg_1_seq_i_1": {
+            "interface_ports": [
+              "arg_1_seq_i",
+              "pr_set_0_0/arg_1_seq_i"
+            ]
+          },
+          "pr_set_0_1_arg_2_seq_o1": {
+            "interface_ports": [
+              "arg_2_seq_o1",
+              "pr_set_0_1/arg_2_seq_o1"
+            ]
+          },
+          "pr_set_0_0_arg_3_mem1": {
+            "interface_ports": [
+              "arg_3_mem1",
+              "pr_set_0_0/arg_3_mem1"
+            ]
+          }
+        }
+      },
+      "u96_ps": {
+        "interface_ports": {
+          "port_0": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "port_1": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "arg_3_seq_o": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "arg_6_seq_o": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "arg_4_seq_i": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "arg_7_seq_i": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          }
+        },
+        "components": {
+          "vsi_context": {
+            "vlnv": "vsi.com:platform:vsi_context:1.0",
+            "xci_name": "system_1_vsi_context_1",
+            "parameters": {
+              "LOGO_FILE": {
+                "value": "data/vsi_context_cpp.png"
+              },
+              "OS": {
+                "value": "Linux"
+              },
+              "build_output": {
+                "value": "binary"
+              },
+              "c_compiler_options": {
+                "value": "-std=c11  -g   -DDEBUG -O0"
+              },
+              "cc_compiler_options": {
+                "value": "-std=c++11 -g  -DDEBUG -O0 -fpermissive"
+              },
+              "cc_prefix": {
+                "value": "aarch64-linux-gnu-"
+              },
+              "cpu_type": {
+                "value": "3"
+              },
+              "current_platform": {
+                "value": "ultra96_platform"
+              },
+              "default_fifo_size": {
+                "value": "4096"
+              },
+              "fpga_board": {
+                "value": "null"
+              },
+              "fpga_part": {
+                "value": "null"
+              },
+              "hostname": {
+                "value": "localhost"
+              },
+              "impl_strategy": {
+                "value": "default"
+              },
+              "include_directories": {
+                "value": "/home/dwq/Documents/Xilinx/Vivado/2019.2/include,$(SYSROOT)/../,"
+              },
+              "ip_build_in": {
+                "value": "false"
+              },
+              "is_cc": {
+                "value": "true"
+              },
+              "is_main": {
+                "value": "true"
+              },
+              "is_system_gui": {
+                "value": "true"
+              },
+              "language": {
+                "value": "hls"
+              },
+              "load_on_demand": {
+                "value": "false"
+              },
+              "map_exposed": {
+                "value": "api"
+              },
+              "map_port": {
+                "value": "1999"
+              },
+              "no_dma": {
+                "value": "false"
+              },
+              "num_cpus": {
+                "value": "1"
+              },
+              "platform_power": {
+                "value": "0"
+              },
+              "python_version": {
+                "value": "2"
+              },
+              "reserve_crs": {
+                "value": "3"
+              },
+              "rt_build_type": {
+                "value": "1"
+              },
+              "simulator": {
+                "value": "1"
+              },
+              "synthesis_mode": {
+                "value": "1"
+              },
+              "sysroot": {
+                "value": "$(SYSROOT)"
+              },
+              "target_platform": {
+                "value": "standard"
+              },
+              "trace_divisor": {
+                "value": "8"
+              },
+              "trace_frequency": {
+                "value": "50"
+              },
+              "trace_poll_timer": {
+                "value": "100000"
+              },
+              "type": {
+                "value": "1"
+              },
+              "use_opencv": {
+                "value": "true"
+              },
+              "use_v4l": {
+                "value": "true"
+              },
+              "use_xdma": {
+                "value": "false"
+              }
+            }
+          },
+          "display_0": {
+            "vlnv": "vsi.com:soft_ip:vsi_gen_ip:1.0",
+            "xci_name": "system_1_vsi_gen_ip_0_1",
+            "parameters": {
+              "C_FUNC_NAME": {
+                "value": "display_image {type CXX_SRC file {$(VSI_INSTALL)/target/common/hls_examples/webcam/webcam.cc} includes {webcam.h } ret void args {control {tname \"hls::stream<int> &\" tsize -2 ttype \"LValueReference\" tattr \"\"} }}"
+              },
+              "ENV_SOURCE_DIR": {
+                "value": "$(VSI_INSTALL)/target/common/hls_examples/webcam,"
+              },
+              "P00_param_ctype": {
+                "value": "hls::stream<int> &"
+              },
+              "P00_param_dir": {
+                "value": "2"
+              },
+              "P00_param_name": {
+                "value": "control"
+              },
+              "P00_param_size": {
+                "value": "-2"
+              },
+              "P00_param_type": {
+                "value": "3"
+              },
+              "P01_param_size": {
+                "value": "0"
+              },
+              "P02_param_size": {
+                "value": "0"
+              },
+              "P03_param_size": {
+                "value": "0"
+              },
+              "P04_param_size": {
+                "value": "0"
+              },
+              "P05_param_size": {
+                "value": "0"
+              },
+              "P06_param_size": {
+                "value": "0"
+              },
+              "P07_param_size": {
+                "value": "0"
+              },
+              "P08_param_size": {
+                "value": "0"
+              },
+              "P09_param_size": {
+                "value": "0"
+              },
+              "P0A_param_size": {
+                "value": "0"
+              },
+              "P0B_param_size": {
+                "value": "0"
+              },
+              "P0C_param_size": {
+                "value": "0"
+              },
+              "P0D_param_size": {
+                "value": "0"
+              },
+              "P0E_param_size": {
+                "value": "0"
+              },
+              "P0F_param_size": {
+                "value": "0"
+              },
+              "SOURCE_DIR": {
+                "value": "/home/dwq/Documents/Systemview/VSI/target/common/hls_examples/webcam,"
+              }
+            }
+          },
+          "fcorner_shmem": {
+            "vlnv": "vsi.com:vsi_software_lib:vsi_mem:1.0",
+            "xci_name": "system_1_vsi_mem_0_0",
+            "parameters": {
+              "MEM_SIZE_KB": {
+                "value": "1024"
+              },
+              "num_ports": {
+                "value": "2"
+              },
+              "share_with_hw": {
+                "value": "true"
+              }
+            }
+          },
+          "minmax_shmem": {
+            "vlnv": "vsi.com:vsi_software_lib:vsi_mem:1.0",
+            "xci_name": "system_1_vsi_mem_1_0",
+            "parameters": {
+              "MEM_SIZE_KB": {
+                "value": "1024"
+              },
+              "num_ports": {
+                "value": "2"
+              },
+              "share_with_hw": {
+                "value": "true"
+              }
+            }
+          },
+          "webcam_0": {
+            "vlnv": "vsi.com:soft_ip:vsi_gen_ip:1.0",
+            "xci_name": "system_1_vsi_gen_ip_1_1",
+            "parameters": {
+              "C_FUNC_NAME": {
+                "value": "webcam0 {type CXX_SRC file {$(VSI_INSTALL)/target/common/hls_examples/webcam/webcam.cc} includes {webcam.h } ret void args {control {tname \"hls::stream<int> &\" tsize -2 ttype \"LValueReference\" tattr \"\"} mem_mm {tname \"vsi::device &\" tsize 8 ttype \"LValueReference\" tattr \"\"} start_mm {tname \"hls::stream<st> &\" tsize -2 ttype \"LValueReference\" tattr \"data last\"} done_mm {tname \"hls::stream<st> &\" tsize -2 ttype \"LValueReference\" tattr \"data last\"} mem_fc {tname \"vsi::device &\" tsize 8 ttype \"LValueReference\" tattr \"\"} start_fc {tname \"hls::stream<st> &\" tsize -2 ttype \"LValueReference\" tattr \"data last\"} done_fc {tname \"hls::stream<st> &\" tsize -2 ttype \"LValueReference\" tattr \"data last\"} }}"
+              },
+              "ENV_SOURCE_DIR": {
+                "value": "$(VSI_INSTALL)/target/common/hls_examples/webcam,"
+              },
+              "NUM_PARAMS": {
+                "value": "7"
+              },
+              "P00_param_ctype": {
+                "value": "hls::stream<int> &"
+              },
+              "P00_param_name": {
+                "value": "control"
+              },
+              "P00_param_size": {
+                "value": "-2"
+              },
+              "P00_param_type": {
+                "value": "3"
+              },
+              "P01_param_access": {
+                "value": "3"
+              },
+              "P01_param_ctype": {
+                "value": "vsi::device &"
+              },
+              "P01_param_dir": {
+                "value": "3"
+              },
+              "P01_param_name": {
+                "value": "mem_mm"
+              },
+              "P01_param_size": {
+                "value": "8"
+              },
+              "P01_param_type": {
+                "value": "3"
+              },
+              "P02_param_ctype": {
+                "value": "hls::stream<st> &"
+              },
+              "P02_param_dir": {
+                "value": "2"
+              },
+              "P02_param_name": {
+                "value": "start_mm"
+              },
+              "P02_param_size": {
+                "value": "-2"
+              },
+              "P02_param_type": {
+                "value": "3"
+              },
+              "P02_sideband": {
+                "value": "data last"
+              },
+              "P03_param_ctype": {
+                "value": "hls::stream<st> &"
+              },
+              "P03_param_name": {
+                "value": "done_mm"
+              },
+              "P03_param_size": {
+                "value": "-2"
+              },
+              "P03_param_type": {
+                "value": "3"
+              },
+              "P03_sideband": {
+                "value": "data last"
+              },
+              "P04_param_access": {
+                "value": "3"
+              },
+              "P04_param_ctype": {
+                "value": "vsi::device &"
+              },
+              "P04_param_dir": {
+                "value": "3"
+              },
+              "P04_param_name": {
+                "value": "mem_fc"
+              },
+              "P04_param_size": {
+                "value": "8"
+              },
+              "P04_param_type": {
+                "value": "3"
+              },
+              "P05_param_ctype": {
+                "value": "hls::stream<st> &"
+              },
+              "P05_param_dir": {
+                "value": "2"
+              },
+              "P05_param_name": {
+                "value": "start_fc"
+              },
+              "P05_param_size": {
+                "value": "-2"
+              },
+              "P05_param_type": {
+                "value": "3"
+              },
+              "P05_sideband": {
+                "value": "data last"
+              },
+              "P06_param_ctype": {
+                "value": "hls::stream<st> &"
+              },
+              "P06_param_name": {
+                "value": "done_fc"
+              },
+              "P06_param_size": {
+                "value": "-2"
+              },
+              "P06_param_type": {
+                "value": "3"
+              },
+              "P06_sideband": {
+                "value": "data last"
+              },
+              "P07_param_size": {
+                "value": "0"
+              },
+              "P08_param_size": {
+                "value": "0"
+              },
+              "P09_param_size": {
+                "value": "0"
+              },
+              "P0A_param_size": {
+                "value": "0"
+              },
+              "P0B_param_size": {
+                "value": "0"
+              },
+              "P0C_param_size": {
+                "value": "0"
+              },
+              "P0D_param_size": {
+                "value": "0"
+              },
+              "P0E_param_size": {
+                "value": "0"
+              },
+              "P0F_param_size": {
+                "value": "0"
+              },
+              "SOURCE_DIR": {
+                "value": "/home/dwq/Documents/Systemview/VSI/target/common/hls_examples/webcam,"
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "port_0_1": {
+            "interface_ports": [
+              "port_0",
+              "fcorner_shmem/port_0"
+            ]
+          },
+          "vsi_gen_ip_1_arg_5_mem": {
+            "interface_ports": [
+              "fcorner_shmem/port_1",
+              "webcam_0/arg_5_mem"
+            ]
+          },
+          "vsi_gen_ip_1_arg_6_seq_o": {
+            "interface_ports": [
+              "arg_6_seq_o",
+              "webcam_0/arg_6_seq_o"
+            ]
+          },
+          "arg_4_seq_i_1": {
+            "interface_ports": [
+              "arg_4_seq_i",
+              "webcam_0/arg_4_seq_i"
+            ]
+          },
+          "port_1_1": {
+            "interface_ports": [
+              "port_1",
+              "minmax_shmem/port_0"
+            ]
+          },
+          "vsi_gen_ip_1_arg_3_seq_o": {
+            "interface_ports": [
+              "arg_3_seq_o",
+              "webcam_0/arg_3_seq_o"
+            ]
+          },
+          "vsi_gen_ip_0_arg_1_seq_o": {
+            "interface_ports": [
+              "webcam_0/arg_1_seq_i",
+              "display_0/arg_1_seq_o"
+            ]
+          },
+          "vsi_gen_ip_1_arg_2_mem": {
+            "interface_ports": [
+              "minmax_shmem/port_1",
+              "webcam_0/arg_2_mem"
+            ]
+          },
+          "arg_7_seq_i_1": {
+            "interface_ports": [
+              "arg_7_seq_i",
+              "webcam_0/arg_7_seq_i"
+            ]
+          }
+        }
+      },
+      "u96_r5": {
+        "components": {
+          "vsi_context": {
+            "vlnv": "vsi.com:platform:vsi_context:1.0",
+            "xci_name": "system_1_vsi_context_2",
+            "parameters": {
+              "LOGO_FILE": {
+                "value": "data/vsi_context_cpp.png"
+              },
+              "OS": {
+                "value": "FreeRTOS"
+              },
+              "build_output": {
+                "value": "binary"
+              },
+              "c_compiler_options": {
+                "value": "-std=c11 -static -g -DDEBUG -O0"
+              },
+              "cc_compiler_options": {
+                "value": "-std=c++11 -static -g -DDEBUG -O0 -fpermissive"
+              },
+              "cc_prefix": {
+                "value": "armr5-none-eabi-"
+              },
+              "cpu_type": {
+                "value": "4"
+              },
+              "current_platform": {
+                "value": "ultra96_platform"
+              },
+              "default_fifo_size": {
+                "value": "4096"
+              },
+              "fpga_board": {
+                "value": "null"
+              },
+              "fpga_part": {
+                "value": "null"
+              },
+              "hostname": {
+                "value": "localhost"
+              },
+              "impl_strategy": {
+                "value": "default"
+              },
+              "ip_build_in": {
+                "value": "false"
+              },
+              "is_cc": {
+                "value": "true"
+              },
+              "is_main": {
+                "value": "false"
+              },
+              "is_system_gui": {
+                "value": "true"
+              },
+              "language": {
+                "value": "hls"
+              },
+              "load_on_demand": {
+                "value": "false"
+              },
+              "map_exposed": {
+                "value": "api"
+              },
+              "map_port": {
+                "value": "1999"
+              },
+              "no_dma": {
+                "value": "false"
+              },
+              "num_cpus": {
+                "value": "1"
+              },
+              "platform_power": {
+                "value": "0"
+              },
+              "python_version": {
+                "value": "2"
+              },
+              "reserve_crs": {
+                "value": "3"
+              },
+              "rt_build_type": {
+                "value": "1"
+              },
+              "simulator": {
+                "value": "1"
+              },
+              "synthesis_mode": {
+                "value": "1"
+              },
+              "target_platform": {
+                "value": "standard"
+              },
+              "trace_divisor": {
+                "value": "8"
+              },
+              "trace_frequency": {
+                "value": "50"
+              },
+              "trace_poll_timer": {
+                "value": "100000"
+              },
+              "type": {
+                "value": "1"
+              },
+              "use_opencv": {
+                "value": "false"
+              },
+              "use_v4l": {
+                "value": "false"
+              },
+              "use_xdma": {
+                "value": "false"
+              }
+            }
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "arg_4_seq_i_1": {
+        "interface_ports": [
+          "u96_ps/arg_4_seq_i",
+          "u96_pl/arg_2_seq_o"
+        ]
+      },
+      "u96_pl_arg_3_mem": {
+        "interface_ports": [
+          "u96_pl/arg_3_mem",
+          "u96_ps/port_0"
+        ]
+      },
+      "u96_pl_arg_3_mem1": {
+        "interface_ports": [
+          "u96_pl/arg_3_mem1",
+          "u96_ps/port_1"
+        ]
+      },
+      "arg_1_seq_i_1": {
+        "interface_ports": [
+          "u96_pl/arg_1_seq_i",
+          "u96_ps/arg_3_seq_o"
+        ]
+      },
+      "arg_7_seq_i_1": {
+        "interface_ports": [
+          "u96_ps/arg_7_seq_i",
+          "u96_pl/arg_2_seq_o1"
+        ]
+      },
+      "arg_1_seq_i1_1": {
+        "interface_ports": [
+          "u96_pl/arg_1_seq_i1",
+          "u96_ps/arg_6_seq_o"
+        ]
+      }
+    }
+  }
+}

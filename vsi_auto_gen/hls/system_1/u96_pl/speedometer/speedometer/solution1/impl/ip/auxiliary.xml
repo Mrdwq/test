@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="draw_speedometer" xd:componentRef="draw_speedometer" xd:initiationInterval="x" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="all">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="io_frame[]" xd:originalName="io_frame" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:arraySize="19200" xd:dataWidth="32" xd:bufferDirection="inout"/>
+  <xd:arg xd:name="start.data" xd:originalName="start" xd:direction="in" xd:interfaceRef="start" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="start.last" xd:originalName="start" xd:direction="in" xd:interfaceRef="start" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="done.data" xd:originalName="done" xd:direction="out" xd:interfaceRef="done" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="done.last" xd:originalName="done" xd:direction="out" xd:interfaceRef="done" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="io_frame" xd:originalName="io_frame" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32" xd:offset="0x10" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="10876" xd:FF="4188" xd:BRAM="6" xd:DSP="32"/>
+</xd:acceleratorMap>

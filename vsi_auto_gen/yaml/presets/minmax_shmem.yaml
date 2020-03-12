@@ -1,0 +1,20 @@
+kernel:
+  - name: minmax_shmem
+    vendor_library_name_version: vsi.com:vsi_software_lib:vsi_mem:1.0
+    context: u96_ps
+    hierarchy: /u96_ps
+    type: software
+    cname: vsi_mem
+    parameters: 
+      MEM_SIZE_KB: 1024
+      num_ports: 2
+      share_with_hw: true
+    interfaces: 
+      - name: port_0
+        direction: input
+        access_type: memory
+        connect: min_max:io_frame
+      - name: port_1
+        direction: input
+        access_type: memory
+        connect: webcam_0:mem_mm

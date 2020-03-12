@@ -1,0 +1,8 @@
+draw_speedometer_dEe
+draw_speedometer_eOg
+draw_speedometer_bkb
+draw_speedometer_cud
+draw_speedometer_AXILiteS_s_axi
+draw_speedometer_gmem_m_axi
+regslice_core
+draw_speedometer

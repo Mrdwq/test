@@ -1,0 +1,32 @@
+kernel:
+  - name: speedometer
+    vendor_library_name_version: vsi.com:soft_ip:vsi_gen_ip:1.0
+    context: u96_pl
+    hierarchy: /u96_pl/pr_set_0_1
+    lod_group: pr_set_0
+    lod_id: 1
+    type: hls
+    cname: draw_speedometer
+    frequency: 100000000
+    source_dirs: $(VSI_INSTALL)/target/common/hls_examples/image_algos,
+    source_file: $(VSI_INSTALL)/target/common/hls_examples/image_algos/image_algos.cc
+    thread_type: dedicated
+    report_files: $(HOME)/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/yaml/kernels/speedometer.1.yaml
+    interfaces: 
+      - name: start
+        direction: input
+        access_type: streaming
+        type: reference
+        max_packet_size: -2
+        trigger: true
+        connect: webcam_0:start_fc
+      - name: done
+        direction: output
+        access_type: streaming
+        type: reference
+        max_packet_size: -2
+      - name: io_frame
+        direction: inout
+        access_type: memory
+        type: array
+        max_packet_size: 76800

@@ -1,0 +1,51 @@
+kernel:
+  - name: webcam_0
+    vendor_library_name_version: vsi.com:soft_ip:vsi_gen_ip:1.0
+    context: u96_ps
+    hierarchy: /u96_ps
+    type: hls
+    cname: webcam0
+    frequency: 100000000
+    source_dirs: $(VSI_INSTALL)/target/common/hls_examples/webcam,
+    include_dirs: $(HOME)/Documents/u96_image/xfopencv,$(VSI_INSTALL)/target/common/hls_examples/webcam,
+    source_file: $(VSI_INSTALL)/target/common/hls_examples/webcam/webcam.cc
+    thread_type: dedicated
+    interfaces: 
+      - name: control
+        direction: input
+        access_type: streaming
+        type: reference
+        max_packet_size: -2
+        connect: display_0:control
+      - name: mem_mm
+        direction: inout
+        access_type: memory
+        type: reference
+        max_packet_size: 8
+      - name: start_mm
+        direction: output
+        access_type: streaming
+        type: reference
+        max_packet_size: -2
+      - name: done_mm
+        direction: input
+        access_type: streaming
+        type: reference
+        max_packet_size: -2
+        connect: min_max:done
+      - name: mem_fc
+        direction: inout
+        access_type: memory
+        type: reference
+        max_packet_size: 8
+      - name: start_fc
+        direction: output
+        access_type: streaming
+        type: reference
+        max_packet_size: -2
+      - name: done_fc
+        direction: input
+        access_type: streaming
+        type: reference
+        max_packet_size: -2
+        connect: speedometer:done

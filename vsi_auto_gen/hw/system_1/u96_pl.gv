@@ -1,0 +1,266 @@
+
+
+
+digraph G {
+        graph [
+        nodesep="5", ranksep="5"
+    ];
+    node [shape=plaintext]
+
+
+        subgraph cluster_vsi_system {
+        fillcolor="#E7F2F8";
+        style=filled;
+        label="vsi_system"
+                subgraph cluster_vsi_system_u96_pl {
+        label="u96_pl"
+                subgraph cluster_vsi_system_u96_pl_pr_set_0_0 {
+        label="pr_set_0_0"
+            vsi_system_u96_pl_pr_set_0_0_min_max [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD PORT="start">start</TD><TD>min_max</TD><TD PORT="done">done</TD></TR></TABLE>
+>];
+
+
+            vsi_system_u96_pl_pr_set_0_0_pr_set_0 [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD>pr_set_0</TD></TR>
+</TABLE>
+>];
+
+
+    };
+
+                subgraph cluster_vsi_system_u96_pl_pr_set_0_1 {
+        label="pr_set_0_1"
+            vsi_system_u96_pl_pr_set_0_1_pr_set_0 [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD>pr_set_0</TD></TR>
+</TABLE>
+>];
+
+
+            vsi_system_u96_pl_pr_set_0_1_speedometer [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD PORT="start">start</TD><TD>speedometer</TD><TD PORT="done">done</TD></TR></TABLE>
+>];
+
+
+    };
+
+    };
+
+                subgraph cluster_vsi_system_u96_ps {
+        label="u96_ps"
+            vsi_system_u96_ps_display_0 [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD></TD><TD>display_0</TD><TD PORT="control">control</TD></TR></TABLE>
+>];
+
+
+            vsi_system_u96_ps_fcorner_shmem [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD PORT="port_0">port_0</TD><TD>fcorner_shmem</TD><TD></TD></TR>    <TR><TD PORT="port_1">port_1</TD><TD></TD><TD></TD></TR></TABLE>
+>];
+
+
+            vsi_system_u96_ps_minmax_shmem [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD PORT="port_0">port_0</TD><TD>minmax_shmem</TD><TD></TD></TR>    <TR><TD PORT="port_1">port_1</TD><TD></TD><TD></TD></TR></TABLE>
+>];
+
+
+            vsi_system_u96_ps_webcam_0 [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD PORT="control">control</TD><TD>webcam_0</TD><TD PORT="start_fc">start_fc</TD></TR>    <TR><TD PORT="done_fc">done_fc</TD><TD></TD><TD PORT="start_mm">start_mm</TD></TR>    <TR><TD PORT="done_mm">done_mm</TD><TD></TD><TD></TD></TR></TABLE>
+>];
+
+
+    };
+
+    };
+
+        subgraph cluster_vsi_platform_u96_pl {
+        fillcolor="#FFEFEC";
+        style=filled;
+        label="u96_pl"
+            vsi_platform_u96_pl_axi_mem_intercon [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD PORT="ACLK">ACLK</TD><TD>axi_mem_intercon</TD><TD PORT="M00_AXI">M00_AXI</TD></TR>    <TR><TD PORT="ARESETN">ARESETN</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="M00_ACLK">M00_ACLK</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="M00_ARESETN">M00_ARESETN</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="S00_ACLK">S00_ACLK</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="S00_ARESETN">S00_ARESETN</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="S00_AXI">S00_AXI</TD><TD></TD><TD></TD></TR></TABLE>
+>];
+
+
+            vsi_platform_u96_pl_axi_uart16550_0 [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD PORT="S_AXI">S_AXI</TD><TD>axi_uart16550_0</TD><TD PORT="UART">UART</TD></TR>    <TR><TD PORT="freeze">freeze</TD><TD></TD><TD PORT="ip2intc_irpt">ip2intc_irpt</TD></TR>    <TR><TD PORT="s_axi_aclk">s_axi_aclk</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="s_axi_aresetn">s_axi_aresetn</TD><TD></TD><TD></TD></TR></TABLE>
+>];
+
+
+            vsi_platform_u96_pl_proc_sys_reset_0 [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD PORT="aux_reset_in">aux_reset_in</TD><TD>proc_sys_reset_0</TD><TD PORT="bus_struct_reset">bus_struct_reset</TD></TR>    <TR><TD PORT="dcm_locked">dcm_locked</TD><TD></TD><TD PORT="interconnect_aresetn">interconnect_aresetn</TD></TR>    <TR><TD PORT="ext_reset_in">ext_reset_in</TD><TD></TD><TD PORT="mb_reset">mb_reset</TD></TR>    <TR><TD PORT="mb_debug_sys_rst">mb_debug_sys_rst</TD><TD></TD><TD PORT="peripheral_aresetn">peripheral_aresetn</TD></TR>    <TR><TD PORT="slowest_sync_clk">slowest_sync_clk</TD><TD></TD><TD PORT="peripheral_reset">peripheral_reset</TD></TR></TABLE>
+>];
+
+
+            vsi_platform_u96_pl_ps8_0_axi_periph [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD PORT="ACLK">ACLK</TD><TD>ps8_0_axi_periph</TD><TD PORT="M00_AXI">M00_AXI</TD></TR>    <TR><TD PORT="ARESETN">ARESETN</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="M00_ACLK">M00_ACLK</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="M00_ARESETN">M00_ARESETN</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="S00_ACLK">S00_ACLK</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="S00_ARESETN">S00_ARESETN</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="S00_AXI">S00_AXI</TD><TD></TD><TD></TD></TR></TABLE>
+>];
+
+
+            vsi_platform_u96_pl_u96_pl [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+        <TR><TD>u96_pl</TD></TR>
+</TABLE>
+>];
+
+
+            vsi_platform_u96_pl_vsi_common_interface_0 [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD PORT="DMA_ACLK">DMA_ACLK</TD><TD>vsi_common_interface_0</TD><TD PORT="CTRL">CTRL</TD></TR>    <TR><TD PORT="DMA_ARESETN">DMA_ARESETN</TD><TD></TD><TD PORT="DMA_1">DMA_1</TD></TR>    <TR><TD PORT="M_AXI_1_ACLK">M_AXI_1_ACLK</TD><TD></TD><TD PORT="M_AXI_1">M_AXI_1</TD></TR>    <TR><TD PORT="M_AXI_1_ARESETN">M_AXI_1_ARESETN</TD><TD></TD><TD PORT="M_AXI_2">M_AXI_2</TD></TR>    <TR><TD PORT="M_AXI_2_ACLK">M_AXI_2_ACLK</TD><TD></TD><TD PORT="decoup_en">decoup_en</TD></TR>    <TR><TD PORT="M_AXI_2_ARESETN">M_AXI_2_ARESETN</TD><TD></TD><TD PORT="irq_o">irq_o</TD></TR>    <TR><TD PORT="PLAT_INTERFACE">PLAT_INTERFACE</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="S_AXI_0">S_AXI_0</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="S_AXI_1">S_AXI_1</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="irq_i_1">irq_i_1</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="irq_i_2">irq_i_2</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="irq_i_3">irq_i_3</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="irq_i_4">irq_i_4</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="irq_i_5">irq_i_5</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="irq_i_6">irq_i_6</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="irq_i_7">irq_i_7</TD><TD></TD><TD></TD></TR>    <TR><TD PORT="irq_i_8">irq_i_8</TD><TD></TD><TD></TD></TR></TABLE>
+>];
+
+
+            vsi_platform_u96_pl_xlconcat_0 [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD PORT="In0">In0</TD><TD>xlconcat_0</TD><TD PORT="dout">dout</TD></TR>    <TR><TD PORT="In1">In1</TD><TD></TD><TD></TD></TR></TABLE>
+>];
+
+
+            vsi_platform_u96_pl_zynq_ultra_ps_e_0 [
+           fillcolor="#F7F7FE";
+        style=filled;
+label=< 
+<TABLE BORDER="1" CELLBORDER="1" CELLSPACING="0">
+    <TR><TD PORT="S_AXI_LPD">S_AXI_LPD</TD><TD>zynq_ultra_ps_e_0</TD><TD PORT="M_AXI_HPM0_LPD">M_AXI_HPM0_LPD</TD></TR>    <TR><TD PORT="maxihpm0_lpd_aclk">maxihpm0_lpd_aclk</TD><TD></TD><TD PORT="M_AXI_HPM1_FPD">M_AXI_HPM1_FPD</TD></TR>    <TR><TD PORT="maxihpm1_fpd_aclk">maxihpm1_fpd_aclk</TD><TD></TD><TD PORT="UART_0">UART_0</TD></TR>    <TR><TD PORT="pl_ps_irq0">pl_ps_irq0</TD><TD></TD><TD PORT="pl_clk0">pl_clk0</TD></TR>    <TR><TD PORT="saxi_lpd_aclk">saxi_lpd_aclk</TD><TD></TD><TD PORT="pl_clk1">pl_clk1</TD></TR>    <TR><TD></TD><TD></TD><TD PORT="pl_clk2">pl_clk2</TD></TR>    <TR><TD></TD><TD></TD><TD PORT="pl_clk3">pl_clk3</TD></TR>    <TR><TD></TD><TD></TD><TD PORT="pl_resetn0">pl_resetn0</TD></TR></TABLE>
+>];
+
+
+    };
+
+        
+vsi_system_u96_pl_pr_set_0_0_min_max:done:e ->vsi_system_u96_ps_webcam_0:done_mm:w[color="#3fe8ee"]
+
+    
+
+    
+
+    
+
+    
+vsi_system_u96_pl_pr_set_0_1_speedometer:done:e ->vsi_system_u96_ps_webcam_0:done_fc:w[color="#f795e1"]
+
+    
+
+    
+
+    
+vsi_system_u96_ps_display_0:control:e ->vsi_system_u96_ps_webcam_0:control:w[color="#8a3ac"]
+
+    
+
+    
+
+    
+vsi_system_u96_ps_webcam_0:start_fc:e ->vsi_system_u96_pl_pr_set_0_1_speedometer:start:w[color="#5645ff"]
+vsi_system_u96_ps_webcam_0:start_mm:e ->vsi_system_u96_pl_pr_set_0_0_min_max:start:w[color="#8f051e"]
+
+    
+
+    
+
+        
+vsi_platform_u96_pl_axi_mem_intercon:M00_AXI:e ->vsi_platform_u96_pl_vsi_common_interface_0:S_AXI_1:w[color="#49c9ab"]
+
+    
+
+    
+vsi_platform_u96_pl_proc_sys_reset_0:interconnect_aresetn:e ->vsi_platform_u96_pl_axi_mem_intercon:ARESETN:w[color="#e97b0d"]
+vsi_platform_u96_pl_proc_sys_reset_0:interconnect_aresetn:e ->vsi_platform_u96_pl_ps8_0_axi_periph:ARESETN:w[color="#e97b0d"]
+vsi_platform_u96_pl_proc_sys_reset_0:peripheral_aresetn:e ->vsi_platform_u96_pl_axi_mem_intercon:M00_ARESETN:w[color="#3798bc"]
+vsi_platform_u96_pl_proc_sys_reset_0:peripheral_aresetn:e ->vsi_platform_u96_pl_axi_mem_intercon:S00_ARESETN:w[color="#141305"]
+vsi_platform_u96_pl_proc_sys_reset_0:peripheral_aresetn:e ->vsi_platform_u96_pl_axi_uart16550_0:s_axi_aresetn:w[color="#1ab53f"]
+vsi_platform_u96_pl_proc_sys_reset_0:peripheral_aresetn:e ->vsi_platform_u96_pl_ps8_0_axi_periph:M00_ARESETN:w[color="#3798bc"]
+vsi_platform_u96_pl_proc_sys_reset_0:peripheral_aresetn:e ->vsi_platform_u96_pl_ps8_0_axi_periph:S00_ARESETN:w[color="#141305"]
+vsi_platform_u96_pl_proc_sys_reset_0:peripheral_aresetn:e ->vsi_platform_u96_pl_vsi_common_interface_0:DMA_ARESETN:w[color="#2a0269"]
+vsi_platform_u96_pl_proc_sys_reset_0:peripheral_aresetn:e ->vsi_platform_u96_pl_vsi_common_interface_0:M_AXI_1_ARESETN:w[color="#9d622f"]
+vsi_platform_u96_pl_proc_sys_reset_0:peripheral_aresetn:e ->vsi_platform_u96_pl_vsi_common_interface_0:M_AXI_2_ARESETN:w[color="#ec6829"]
+
+    
+vsi_platform_u96_pl_ps8_0_axi_periph:M00_AXI:e ->vsi_platform_u96_pl_axi_uart16550_0:S_AXI:w[color="#a71b6c"]
+
+    
+
+    
+vsi_platform_u96_pl_vsi_common_interface_0:DMA_1:e ->vsi_platform_u96_pl_zynq_ultra_ps_e_0:S_AXI_LPD:w[color="#2c06a9"]
+
+    
+vsi_platform_u96_pl_xlconcat_0:dout:e ->vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_ps_irq0:w[color="#d4f824"]
+
+    
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:M_AXI_HPM0_LPD:e ->vsi_platform_u96_pl_axi_mem_intercon:S00_AXI:w[color="#36b789"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:M_AXI_HPM1_FPD:e ->vsi_platform_u96_pl_ps8_0_axi_periph:S00_AXI:w[color="#53a871"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_clk0:e ->vsi_platform_u96_pl_axi_mem_intercon:ACLK:w[color="#668ea2"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_clk0:e ->vsi_platform_u96_pl_axi_mem_intercon:M00_ACLK:w[color="#36479a"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_clk0:e ->vsi_platform_u96_pl_axi_mem_intercon:S00_ACLK:w[color="#11395d"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_clk0:e ->vsi_platform_u96_pl_axi_uart16550_0:s_axi_aclk:w[color="#b79b4e"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_clk0:e ->vsi_platform_u96_pl_proc_sys_reset_0:slowest_sync_clk:w[color="#49ce67"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_clk0:e ->vsi_platform_u96_pl_ps8_0_axi_periph:ACLK:w[color="#668ea2"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_clk0:e ->vsi_platform_u96_pl_ps8_0_axi_periph:M00_ACLK:w[color="#36479a"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_clk0:e ->vsi_platform_u96_pl_ps8_0_axi_periph:S00_ACLK:w[color="#11395d"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_clk0:e ->vsi_platform_u96_pl_vsi_common_interface_0:DMA_ACLK:w[color="#293b9c"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_clk0:e ->vsi_platform_u96_pl_vsi_common_interface_0:M_AXI_1_ACLK:w[color="#75fbc6"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_clk0:e ->vsi_platform_u96_pl_vsi_common_interface_0:M_AXI_2_ACLK:w[color="#3f9045"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_clk0:e ->vsi_platform_u96_pl_zynq_ultra_ps_e_0:maxihpm0_lpd_aclk:w[color="#fa21e4"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_clk0:e ->vsi_platform_u96_pl_zynq_ultra_ps_e_0:maxihpm1_fpd_aclk:w[color="#4c043b"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_clk0:e ->vsi_platform_u96_pl_zynq_ultra_ps_e_0:saxi_lpd_aclk:w[color="#d2e406"]
+vsi_platform_u96_pl_zynq_ultra_ps_e_0:pl_resetn0:e ->vsi_platform_u96_pl_proc_sys_reset_0:ext_reset_in:w[color="#36445c"]
+
+    
+
+}

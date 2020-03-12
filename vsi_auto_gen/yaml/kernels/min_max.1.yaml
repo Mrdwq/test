@@ -1,0 +1,78 @@
+min_max_shmem:
+  UserAssignments:
+    unit: ns
+    ProductFamily: zynquplus
+    Part: xczu3eg-sbva484-1-e
+    TopModelName: min_max_shmem
+    TargetClockPeriod: 10.00
+    ClockUncertainty: 1.25
+  PerformanceEstimates:
+    PipelineType: none
+    SummaryOfTimingAnalysis:
+      unit: ns
+      EstimatedClockPeriod: 8.750
+    SummaryOfOverallLatency:
+      unit: clock cycles
+      Best-caseLatency: undef
+      Average-caseLatency: undef
+      Worst-caseLatency: undef
+      Best-caseRealTimeLatency: undef
+      Average-caseRealTimeLatency: undef
+      Worst-caseRealTimeLatency: undef
+      Interval-min: undef
+      Interval-max: undef
+    SummaryOfLoopLatency:
+      loop:
+        VSI_LOOP_33:
+          TripCount:
+            min: 19200
+            max: 19200
+          Latency:
+            min: 38401
+            max: 38401
+          PipelineII:
+            min: 2
+            max: 2
+          PipelineDepth:
+            min: 4
+            max: 4
+        VSI_LOOP_34_VSI_LOOP_35:
+          TripCount:
+            min: 75129
+            max: 75129
+          Latency:
+            min: 375646
+            max: 375646
+          PipelineII:
+            min: 5
+            max: 5
+          PipelineDepth:
+            min: 6
+            max: 6
+        VSI_LOOP_29:
+          TripCount:
+            min: undef
+            max: undef
+          Latency:
+            min: undef
+            max: undef
+          PipelineII:
+            min: 233
+            max: 233
+          PipelineDepth:
+            min: 234
+            max: 234
+    Power: 0.8146900024414062
+  AreaEstimates:
+    Resources:
+      BRAM_18K: 40
+      DSP48E: 1
+      FF: 5828
+      LUT: 9659
+      URAM: 0
+    AvailableResources:
+      BRAM_18K: 432
+      DSP48E: 360
+      FF: 141120
+      LUT: 70560
+      URAM: 0

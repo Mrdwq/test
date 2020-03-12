@@ -1,0 +1,98 @@
+#!/usr/bin/expect -f
+set CTX_PATH [file dirname [info script]]
+set HOSTNAME "localhost"
+set LOGIN "root@${HOSTNAME}"
+set PASSWORD "root"
+set storage_device /dev/mmcblk0p1
+set mount_point /mnt
+set target_dir "${mount_point}/.vsi"
+set firmware_dir /lib/firmware
+set timeout 10
+
+proc copy_id {} {
+	global LOGIN
+	global PASSWORD
+	spawn ssh-copy-id "${LOGIN}"
+	while {1} {
+		expect {
+			"password:" {
+				send "${PASSWORD}\r"
+			}
+			"continue connecting (yes/no)? " {
+				send "yes\r"
+			}
+			eof {
+				break
+			}
+		}
+	}
+	close $spawn_id
+}
+
+proc clean_id {} {
+	global HOSTNAME
+	spawn ssh-keygen -f "$::env(HOME)/.ssh/known_hosts" -R ${HOSTNAME}
+	expect "known_hosts.old\r"
+	close $spawn_id
+}
+
+while {1} {
+	spawn ssh "${LOGIN}"
+	expect {
+		eof {
+			break
+		}
+		"Host key verification failed." {
+			clean_id
+			copy_id
+		}
+		"password:" {
+			close $spawn_id
+			copy_id
+		}
+		"continue connecting (yes/no)? " {
+			send "yes\r"
+		}
+		":~# " {
+			break
+		}
+	}
+}
+# mount storage
+send "mount ${storage_device} ${mount_point}\r"
+expect ":~# "
+send "mkdir -p ${target_dir}\r"
+expect ":~# "
+
+send "exit\r"
+close $spawn_id
+spawn scp ${CTX_PATH}/../build/u96_ps/bin/u96_ps ${LOGIN}:${firmware_dir}/u96_ps.elf
+expect "100%"
+spawn scp ${CTX_PATH}/../build/u96_ps/bin/u96_ps ${LOGIN}:${target_dir}/
+expect "100%"
+
+spawn scp ${CTX_PATH}/../build/u96_ps/bin/p_u96_pl_zynq_ultra_ps_e_0_init ${LOGIN}:${target_dir}/
+expect "100%"
+
+spawn scp ${CTX_PATH}/driver.sh ${LOGIN}:${target_dir}/
+expect "100%"
+
+spawn scp ${CTX_PATH}/logrun.sh ${LOGIN}:${target_dir}/
+expect "100%"
+
+spawn ssh "${LOGIN}"
+expect ":~# "
+
+send "/sbin/devmem 0xff180068 32 0\r"
+expect ":~# "
+send "sync;sync\r"
+expect ":~# "
+send "modprobe zynqmp_r5_remoteproc firmware=u96_ps.elf\r"
+expect ":~# "
+
+send "cd ${target_dir}\r"
+expect "${target_dir}# "
+send "${target_dir}/driver.sh\r"
+expect "${target_dir}# "
+send "exit\r"
+close $spawn_id

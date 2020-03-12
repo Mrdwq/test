@@ -1,0 +1,185 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/dwq/Documents/Xilinx/Vivado/2019.2/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/home/dwq/Documents/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'dwq' on host 'ubuntu' (Linux_x86_64 version 4.4.0-174-generic) on Thu Mar 12 04:17:18 PDT 2020
+INFO: [HLS 200-10] On os Ubuntu 16.04 LTS
+INFO: [HLS 200-10] In directory '/home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer'
+Sourcing Tcl script 'speedometer.tcl'
+INFO: [HLS 200-10] Creating and opening project '/home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer'.
+INFO: [HLS 200-10] Adding design file './annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc' to the project
+INFO: [HLS 200-10] Creating and opening solution '/home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1'.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file './annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc' ... 
+WARNING: [HLS 200-40] In file included from ./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:1:
+./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:410:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:143:3
+WARNING: [HLS 214-104] Only for-loops and functions support the dataflow: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:149:9
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:173:3
+WARNING: [HLS 214-104] Only for-loops and functions support the dataflow: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:179:9
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:237:216
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:237:226
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:237:240
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:225:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:239:2
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:907:113
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:908:104
+WARNING: [HLS 214-104] Only for-loops and functions support the dataflow: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:906:9
+WARNING: [HLS 214-104] Only for-loops and functions support the dataflow: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:912:9
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:955:124
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:955:138
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:943:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:957:2
+WARNING: [HLS 200-471] Dataflow form checks found 17 issue(s) in file ./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 958.836 ; gain = 528.973 ; free physical = 1437 ; free virtual = 5516
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 958.836 ; gain = 528.973 ; free physical = 1437 ; free virtual = 5516
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'drawline<240, 320>' into 'draw_speedometer' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+INFO: [XFORM 203-603] Inlining function 'drawline<240, 320>' into 'draw_speedometer' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 964.930 ; gain = 535.066 ; free physical = 1107 ; free virtual = 5220
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:55) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1092.285 ; gain = 662.422 ; free physical = 1057 ; free virtual = 5173
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VSI_LOOP_36' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:696) in function 'draw_speedometer' for pipelining.
+WARNING: [XFORM 203-503] Cannot unroll loop 'VSI_LOOP_29' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:427) in function 'draw_speedometer' completely: variable loop bound.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:55) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'draw_speedometer' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:701) automatically.
+INFO: [XFORM 203-602] Inlining function 'set_val' into 'draw_speedometer' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:433:3) to (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:436:2) in function 'draw_speedometer'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:433:3) to (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:436:2) in function 'draw_speedometer'... converting 5 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'draw_speedometer' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:689)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1104.367 ; gain = 674.504 ; free physical = 949 ; free virtual = 5074
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'VSI_LOOP_36' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:696:57) in function 'draw_speedometer' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1104.367 ; gain = 674.504 ; free physical = 937 ; free virtual = 5064
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'draw_speedometer' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'draw_speedometer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened.
+INFO: [SCHED 204-61] Pipelining loop 'VSI_LOOP_29'.
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 193, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 225, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 229, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 231, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 232, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 233, Depth = 234.
+INFO: [SCHED 204-61] Pipelining loop 'VSI_LOOP_29'.
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 193, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 225, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 229, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 231, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 232, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 233, Depth = 234.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 36.05 seconds; current allocated memory: 354.676 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.71 seconds; current allocated memory: 359.229 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'draw_speedometer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'draw_speedometer/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'draw_speedometer/start_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'draw_speedometer/start_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'draw_speedometer/done_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'draw_speedometer/done_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'draw_speedometer/io_frame' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'draw_speedometer' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'draw_speedometer_p_sin_tab' to 'draw_speedometer_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'draw_speedometer_p_cos_tab' to 'draw_speedometer_cud' due to the length limit 20
+INFO: [RTGEN 206-100] Bundling port 'io_frame' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'draw_speedometer_dadd_64ns_64ns_64_5_full_dsp_1' to 'draw_speedometer_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'draw_speedometer_dmul_64ns_64ns_64_5_max_dsp_1' to 'draw_speedometer_eOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'draw_speedometer_dEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'draw_speedometer_eOg': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'draw_speedometer'.
+INFO: [HLS 200-111]  Elapsed time: 1.02 seconds; current allocated memory: 367.482 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 114.29 MHz
+INFO: [RTMG 210-279] Implementing memory 'draw_speedometer_bkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'draw_speedometer_cud_rom' using auto ROMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1230.840 ; gain = 800.977 ; free physical = 872 ; free virtual = 5018
+INFO: [VHDL 208-304] Generating VHDL RTL for draw_speedometer.
+INFO: [VLOG 209-307] Generating Verilog RTL for draw_speedometer.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script '/home/dwq/.Xilinx/Vivado/Vivado_init.tcl'
+37 Beta devices matching pattern found, 0 enabled.
+enable_beta_device: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1508.625 ; gain = 46.016 ; free physical = 461 ; free virtual = 4649
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/dwq/Documents/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'draw_speedometer_ap_dadd_3_full_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1606.801 ; gain = 93.176 ; free physical = 341 ; free virtual = 4537
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'draw_speedometer_ap_dadd_3_full_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'draw_speedometer_ap_dadd_3_full_dsp_64'...
+WARNING: [IP_Flow 19-4832] The IP name 'draw_speedometer_ap_dmul_3_max_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'draw_speedometer_ap_dmul_3_max_dsp_64'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'draw_speedometer_ap_dmul_3_max_dsp_64'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/dwq/Documents/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 12 04:18:32 2020...
+INFO: [HLS 200-112] Total elapsed time: 77.03 seconds; peak allocated memory: 367.482 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Thu Mar 12 04:18:35 2020...

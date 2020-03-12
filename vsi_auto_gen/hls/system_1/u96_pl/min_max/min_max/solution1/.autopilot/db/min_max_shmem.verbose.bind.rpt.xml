@@ -1,0 +1,55 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'min_max_shmem'" level="0">
+<item name = "Date">Thu Mar 12 04:18:07 2020
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">min_max</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.750 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VSI_LOOP_33">38401, 38401, 4, 2, 1, 19200, yes</column>
+<column name="- VSI_LOOP_34_VSI_LOOP_35">375646, 375646, 6, 5, 1, 75129, yes</column>
+<column name="- VSI_LOOP_29">?, ?, 234, 233, 1, ?, yes</column>
+<column name="- VSI_LOOP_29">?, ?, 234, 233, 1, ?, yes</column>
+<column name="- VSI_LOOP_29">?, ?, 234, 233, 1, ?, yes</column>
+<column name="- VSI_LOOP_29">?, ?, 234, 233, 1, ?, yes</column>
+<column name="- VSI_LOOP_29">?, ?, 234, 233, 1, ?, yes</column>
+<column name="- VSI_LOOP_29">?, ?, 234, 233, 1, ?, yes</column>
+<column name="- VSI_LOOP_29">?, ?, 234, 233, 1, ?, yes</column>
+<column name="- VSI_LOOP_29">?, ?, 234, 233, 1, ?, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

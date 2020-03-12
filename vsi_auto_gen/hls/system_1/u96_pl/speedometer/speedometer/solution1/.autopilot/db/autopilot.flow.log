@@ -1,0 +1,872 @@
+INFO-FLOW: Workspace /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1 opened at Thu Mar 12 04:17:18 PDT 2020
+Execute     set_directive_inline draw_speedometer 
+INFO-FLOW: Setting directive 'INLINE' 
+Execute     set_directive_interface -mode axis draw_speedometer start 
+INFO-FLOW: Setting directive 'INLINE' 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode port=positionBooleanTextRequiredstart 
+Execute     set_directive_interface -mode axis draw_speedometer done 
+INFO-FLOW: Setting directive 'INLINE' 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode port=positionBooleanTextRequiredstart 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode port=positionBooleanTextRequireddone 
+Execute     set_directive_interface -latency 110 -mode m_axi -depth 76800 -offset slave draw_speedometer io_frame 
+INFO-FLOW: Setting directive 'INLINE' 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode port=positionBooleanTextRequiredstart 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode port=positionBooleanTextRequireddone 
+INFO-FLOW: Setting directive 'INTERFACE' m_axi=positionBoolean0mode depth=76800 latency=110 port=positionBooleanTextRequiredio_frame offset=slave 
+Execute     source directives_1.tcl 
+Execute     config_rtl -enable_maxiConservative 
+Execute     set_part xczu3eg-sbva484-1-e 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data single -quiet 
+Command       ap_part_info done; 2.05 sec.
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xczu3eg:-sbva484:-1-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.11 sec.
+Command         ap_source done; 0.11 sec.
+Execute         ap_part_info -data single -name xczu3eg-sbva484-1-e 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data resources 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute         config_chip_info -quiet -resource {SLICE 8820} {LUT 70560} {FF 141120} {DSP48E 360} {BRAM 432} {URAM 0} 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.22 sec.
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-e'
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 2.4 sec.
+Execute     config_rtl -reset all -reset_level low -reset_async 
+Execute     create_clock -period 10.0 -name default 
+Execute       config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     config_bind -effort low 
+Execute     config_schedule -effort medium 
+Execute     csynth_design 
+Execute       get_config_compile -dump_cfg 
+Execute       get_config_compile -effort 
+Execute       get_config_compile -enable_clang39 
+Execute       get_config_compile -g 
+Execute       get_config_compile -ng 
+Execute       get_config_compile -opt_fp 
+Execute       get_config_compile -skip_cdt 
+Execute       get_config_compile -skip_syncheck 
+Execute       get_config_compile -skip_transform 
+Execute       get_config_compile -keep_printf 
+Execute       elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute         get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute         get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file './annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc' ... 
+INFO-FLOW: Compiling one TU...
+Execute         is_m_axi_addr64 
+INFO-FLOW: Handling ./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc as C++
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info 
+Execute         is_encrypted ./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute         clang  -fno-limit-debug-info -gcc-toolchain "/home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc"   -std=c++11 -I/home/dwq/Documents/u96_image/xfopencv//include -I/home/dwq/Documents/u96_image/xfopencv//include -I/home/dwq/Documents/Systemview/VSI/target/common/hls_examples/image_algos -I/home/dwq/Documents/Systemview/VSI/target/common/include/vsi -D__VSI_HLS_SYN__  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  -o "/home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc" 
+INFO-FLOW: exec /home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E ./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc -std=c++11 -I/home/dwq/Documents/u96_image/xfopencv//include -I/home/dwq/Documents/u96_image/xfopencv//include -I/home/dwq/Documents/Systemview/VSI/target/common/hls_examples/image_algos -I/home/dwq/Documents/Systemview/VSI/target/common/include/vsi -D__VSI_HLS_SYN__ -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/autopilot -I /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc
+Command         clang done; 1.93 sec.
+Execute         tidy_31 xilinx-xfmat-array-geometry /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc std=c++11 
+INFO-FLOW: exec /home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc -- -std=c++11 -fhls -ferror-limit=0
+Command         tidy_31 done; 1.7 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute         clang -syntaxcheck -src /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc  -fno-limit-debug-info -gcc-toolchain "/home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/gcc" -hls  -std=c++11 -I/home/dwq/Documents/u96_image/xfopencv//include -I/home/dwq/Documents/u96_image/xfopencv//include -I/home/dwq/Documents/Systemview/VSI/target/common/hls_examples/image_algos -I/home/dwq/Documents/Systemview/VSI/target/common/include/vsi -D__VSI_HLS_SYN__  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  "/home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc"  -o "/home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -std=c++11 -I/home/dwq/Documents/u96_image/xfopencv//include -I/home/dwq/Documents/u96_image/xfopencv//include -I/home/dwq/Documents/Systemview/VSI/target/common/hls_examples/image_algos -I/home/dwq/Documents/Systemview/VSI/target/common/include/vsi -D__VSI_HLS_SYN__ -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/autopilot -I /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/useless.bc
+WARNING: [HLS 200-40] In file included from ./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:1:
+./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:410:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+Command         clang done; 2.92 sec.
+INFO-FLOW: Done: GCC PP time: 6.6 seconds per iteration
+INFO-FLOW: Setting directive 'INLINE' 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode port=positionBooleanTextRequiredstart 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode port=positionBooleanTextRequireddone 
+INFO-FLOW: Setting directive 'INTERFACE' m_axi=positionBoolean0mode depth=76800 latency=110 port=positionBooleanTextRequiredio_frame offset=slave 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'INLINE' 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode port=positionBooleanTextRequiredstart 
+INFO-FLOW: Setting directive 'INTERFACE' axis=positionBoolean0mode port=positionBooleanTextRequireddone 
+INFO-FLOW: Setting directive 'INTERFACE' m_axi=positionBoolean0mode depth=76800 latency=110 port=positionBooleanTextRequiredio_frame offset=slave 
+Execute         list_core -type functional_unit 
+Execute         tidy_31 xilinx-systemc-detector /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc std=c++11 -directive=/home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc -- -std=c++11 -fhls -ferror-limit=0
+Command         tidy_31 done; 1.56 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute         tidy_31 xilinx-directive2pragma /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc std=c++11 -directive=/home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc -- -std=c++11 -fhls -ferror-limit=0
+Command         tidy_31 done; 2.29 sec.
+Execute         get_config_dataflow -strict_mode 
+Execute         ap_eval exec -ignorestderr /home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/xilinx-dataflow-lawyer.image_algos.pp.0.cc.diag.yml /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc -- -std=c++11 -fhls -ferror-limit=0 -fstrict-dataflow > /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/xilinx-dataflow-lawyer.image_algos.pp.0.cc.out.log 2> /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/xilinx-dataflow-lawyer.image_algos.pp.0.cc.err.log 
+Command         ap_eval done; 1.74 sec.
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:143:3
+WARNING: [HLS 214-104] Only for-loops and functions support the dataflow: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:149:9
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:173:3
+WARNING: [HLS 214-104] Only for-loops and functions support the dataflow: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:179:9
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:237:216
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:237:226
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:237:240
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:225:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/dwq/Documents/u96_image/xfopencv//include/imgproc/xf_canny.hpp:239:2
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:907:113
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:908:104
+WARNING: [HLS 214-104] Only for-loops and functions support the dataflow: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:906:9
+WARNING: [HLS 214-104] Only for-loops and functions support the dataflow: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:912:9
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:955:124
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:955:138
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:943:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/dwq/Documents/u96_image/xfopencv//include/features/xf_fast.hpp:957:2
+Execute         send_msg_by_id WARNING @200-471@%s%s 17 ./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc 
+WARNING: [HLS 200-471] Dataflow form checks found 17 issue(s) in file ./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc
+Execute         tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc std=c++11 
+Execute           ap_eval exec -ignorestderr /home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/tidy-3.1.image_algos.pp.0.cc.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc -- -std=c++11 -fhls -ferror-limit=0 > /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/tidy-3.1.image_algos.pp.0.cc.out.log 2> /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/tidy-3.1.image_algos.pp.0.cc.err.log 
+Command           ap_eval done; 3.22 sec.
+Execute           ap_eval exec -ignorestderr /home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pp.0.cc -- -std=c++11 -fhls -ferror-limit=0 > /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/xilinx-legacy-rewriter.image_algos.pp.0.cc.out.log 2> /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/xilinx-legacy-rewriter.image_algos.pp.0.cc.err.log 
+Command           ap_eval done; 1.36 sec.
+Command         tidy_31 done; 4.68 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 8.8 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute         tidy_31 xilinx-ssdm-intrinsics-arguments /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pragma.1.cc std=c++11 
+INFO-FLOW: exec /home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pragma.1.cc -- -std=c++11 -fhls -ferror-limit=0
+Command         tidy_31 done; 3.38 sec.
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info 
+INFO-FLOW: Processing labels
+Execute         clang -src /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pragma.2.cc  -fno-limit-debug-info -gcc-toolchain /home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pragma.2.cc"  -std=c++11 -I/home/dwq/Documents/u96_image/xfopencv//include -I/home/dwq/Documents/u96_image/xfopencv//include -I/home/dwq/Documents/Systemview/VSI/target/common/hls_examples/image_algos -I/home/dwq/Documents/Systemview/VSI/target/common/include/vsi -D__VSI_HLS_SYN__  -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/autopilot" -I "/home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o "/home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.bc" 
+INFO-FLOW: exec /home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.pragma.2.cc -std=c++11 -I/home/dwq/Documents/u96_image/xfopencv//include -I/home/dwq/Documents/u96_image/xfopencv//include -I/home/dwq/Documents/Systemview/VSI/target/common/hls_examples/image_algos -I/home/dwq/Documents/Systemview/VSI/target/common/include/vsi -D__VSI_HLS_SYN__ -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/autopilot -I /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.bc
+Command         clang done; 3.11 sec.
+INFO-FLOW: Linking Debug ...
+Execute         llvm-ld /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/image_algos.g.bc -hls-opt -except-internalize draw_speedometer -L/home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/lib -lhlsm -lhlsmc++ -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.g 
+Command         llvm-ld done; 2.3 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 958.836 ; gain = 528.973 ; free physical = 1437 ; free virtual = 5516
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 958.836 ; gain = 528.973 ; free physical = 1437 ; free virtual = 5516
+Execute         get_config_sdx -target 
+Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute           cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute           transform -promote-dbg-pointer /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.pp.bc -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.pp.0.bc -f 
+Command           transform done; 0.31 sec.
+Execute           llvm-ld /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/home/dwq/Documents/Xilinx/Vivado/2019.2/lnx64/lib -lfloatconversion -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.g.0 
+Command           llvm-ld done; 2.48 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top draw_speedometer -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.g.0.bc -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [XFORM 203-603] Inlining function 'drawline<240, 320>' into 'draw_speedometer' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+INFO: [XFORM 203-603] Inlining function 'drawline<240, 320>' into 'draw_speedometer' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+Command           transform done; 1.11 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 964.930 ; gain = 535.066 ; free physical = 1107 ; free virtual = 5220
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute           transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.g.1.bc -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:55) automatically.
+Command           transform done; 0.58 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute           transform -syn-check /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+Command           transform done; 0.15 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1092.285 ; gain = 662.422 ; free physical = 1057 ; free virtual = 5173
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.g.1.bc to /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute           transform -hls -tmp /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.o.1.bc -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VSI_LOOP_36' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:696) in function 'draw_speedometer' for pipelining.
+WARNING: [XFORM 203-503] Cannot unroll loop 'VSI_LOOP_29' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:427) in function 'draw_speedometer' completely: variable loop bound.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, double>' into 'generic_cast_IEEE754<int, double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, double>' into '__hls_fptosi_double_i32' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:55) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_double_i32' into 'draw_speedometer' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:701) automatically.
+INFO: [XFORM 203-602] Inlining function 'set_val' into 'draw_speedometer' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) automatically.
+Command           transform done; 0.72 sec.
+INFO-FLOW: Presyn 2...
+Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:433:3) to (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:436:2) in function 'draw_speedometer'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:433:3) to (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:436:2) in function 'draw_speedometer'... converting 5 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'draw_speedometer' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:689)...6 expression(s) balanced.
+Command           transform done; 0.3 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1104.367 ; gain = 674.504 ; free physical = 949 ; free virtual = 5074
+INFO-FLOW: Building ssdm...
+Execute           transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.o.2.bc -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'VSI_LOOP_36' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:696:57) in function 'draw_speedometer' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+Command           transform done; 0.46 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1104.367 ; gain = 674.504 ; free physical = 937 ; free virtual = 5064
+INFO-FLOW: Finish building internal data model.
+Command         opt_and_import_c done; 6.15 sec.
+Command       elaborate done; 32.5 sec.
+Execute       autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'draw_speedometer' ...
+Execute         ap_set_top_model draw_speedometer 
+Execute         get_model_list draw_speedometer -filter all-wo-channel -topdown 
+Execute         preproc_iomode -model draw_speedometer 
+Execute         get_model_list draw_speedometer -filter all-wo-channel 
+INFO-FLOW: Model list for configure: draw_speedometer
+INFO-FLOW: Configuring Module : draw_speedometer ...
+Execute         set_default_model draw_speedometer 
+Execute         apply_spec_resource_limit draw_speedometer 
+INFO-FLOW: Model list for preprocess: draw_speedometer
+INFO-FLOW: Preprocessing Module: draw_speedometer ...
+Execute         set_default_model draw_speedometer 
+Execute         cdfg_preprocess -model draw_speedometer 
+Execute         rtl_gen_preprocess draw_speedometer 
+INFO-FLOW: Model list for synthesis: draw_speedometer
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'draw_speedometer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         set_default_model draw_speedometer 
+Execute         schedule -model draw_speedometer 
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened.
+INFO: [SCHED 204-61] Pipelining loop 'VSI_LOOP_29'.
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 193, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 225, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 229, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 231, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 232, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:704).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 233, Depth = 234.
+INFO: [SCHED 204-61] Pipelining loop 'VSI_LOOP_29'.
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 130, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 193, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 225, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 229, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 231, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+WARNING: [SCHED 204-68] The II Violation in module 'draw_speedometer' (Loop: VSI_LOOP_29): Unable to enforce a carried dependence constraint (II = 232, distance = 1, offset = 1)
+   between bus access on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720) and bus request on port 'gmem' (./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:430->./annotated_src/image_algos_694f8a7303f53d8b98d7dda9570eba69/image_algos.cc:720).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 233, Depth = 234.
+INFO: [SCHED 204-11] Finished scheduling.
+Command         schedule done; 0.86 sec.
+INFO: [HLS 200-111]  Elapsed time: 36.05 seconds; current allocated memory: 354.676 MB.
+Execute         syn_report -verbosereport -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.verbose.sched.rpt 
+Command         syn_report done; 1.02 sec.
+Execute         db_write -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.sched.adb -f 
+INFO-FLOW: Finish scheduling draw_speedometer.
+Execute         set_default_model draw_speedometer 
+Execute         bind -model draw_speedometer 
+BIND OPTION: effort=low
+BIND OPTION: model=draw_speedometer
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command         bind done; 0.63 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.71 seconds; current allocated memory: 359.229 MB.
+Execute         syn_report -verbosereport -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.verbose.bind.rpt 
+Command         syn_report done; 0.55 sec.
+Execute         db_write -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.bind.adb -f 
+INFO-FLOW: Finish binding draw_speedometer.
+Execute         get_model_list draw_speedometer -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute         rtl_gen_preprocess draw_speedometer 
+INFO-FLOW: Model list for RTL generation: draw_speedometer
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'draw_speedometer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute         get_config_rtl -module_prefix 
+Execute         get_config_rtl -module_auto_prefix 
+Execute         create_rtl_model draw_speedometer -vendor xilinx -mg_file /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'draw_speedometer/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'draw_speedometer/start_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'draw_speedometer/start_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'draw_speedometer/done_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'draw_speedometer/done_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'draw_speedometer/io_frame' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'draw_speedometer' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'draw_speedometer_p_sin_tab' to 'draw_speedometer_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'draw_speedometer_p_cos_tab' to 'draw_speedometer_cud' due to the length limit 20
+INFO: [RTGEN 206-100] Bundling port 'io_frame' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'draw_speedometer_dadd_64ns_64ns_64_5_full_dsp_1' to 'draw_speedometer_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'draw_speedometer_dmul_64ns_64ns_64_5_max_dsp_1' to 'draw_speedometer_eOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'draw_speedometer_dEe': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'draw_speedometer_eOg': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'draw_speedometer'.
+Command         create_rtl_model done; 0.39 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.02 seconds; current allocated memory: 367.482 MB.
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.rtl_wrap.cfg.tcl 
+Execute         gen_rtl draw_speedometer -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/syn/systemc/draw_speedometer -synmodules draw_speedometer 
+Execute         gen_rtl draw_speedometer -istop -style xilinx -f -lang vhdl -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/syn/vhdl/draw_speedometer 
+Command         gen_rtl done; 0.22 sec.
+Execute         gen_rtl draw_speedometer -istop -style xilinx -f -lang vlog -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/syn/verilog/draw_speedometer 
+Command         gen_rtl done; 0.12 sec.
+Execute         syn_report -csynth -model draw_speedometer -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/syn/report/draw_speedometer_csynth.rpt 
+Execute         syn_report -rtlxml -model draw_speedometer -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/syn/report/draw_speedometer_csynth.xml 
+Execute         syn_report -verbosereport -model draw_speedometer -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.verbose.rpt 
+Command         syn_report done; 0.74 sec.
+Execute         db_write -model draw_speedometer -f -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.adb 
+Command         db_write done; 0.26 sec.
+Execute         gen_tb_info draw_speedometer -p /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer 
+Execute         export_constraint_db -f -tool general -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.constraint.tcl 
+Execute         syn_report -designview -model draw_speedometer -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.design.xml 
+Command         syn_report done; 0.2 sec.
+Execute         get_config_rtl -disable_wave_debug 
+Execute         syn_report -wcfg -model draw_speedometer -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer_dataflow_ana.wcfg 
+Execute         syn_report -protoinst -model draw_speedometer -o /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.protoinst 
+Execute         get_config_debug -directory 
+Execute         sc_get_clocks draw_speedometer 
+Execute         get_config_export -vivado_clock 
+Execute         sc_get_portdomain draw_speedometer 
+INFO-FLOW: Model list for RTL component generation: draw_speedometer
+INFO-FLOW: Handling components in module [draw_speedometer] ... 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.tcl 
+INFO-FLOW: Found component draw_speedometer_dEe.
+INFO-FLOW: Append model draw_speedometer_dEe
+INFO-FLOW: Found component draw_speedometer_eOg.
+INFO-FLOW: Append model draw_speedometer_eOg
+INFO-FLOW: Found component draw_speedometer_bkb.
+INFO-FLOW: Append model draw_speedometer_bkb
+INFO-FLOW: Found component draw_speedometer_cud.
+INFO-FLOW: Append model draw_speedometer_cud
+INFO-FLOW: Found component draw_speedometer_AXILiteS_s_axi.
+INFO-FLOW: Append model draw_speedometer_AXILiteS_s_axi
+INFO-FLOW: Found component draw_speedometer_gmem_m_axi.
+INFO-FLOW: Append model draw_speedometer_gmem_m_axi
+INFO-FLOW: Found component regslice_core.
+INFO-FLOW: Append model regslice_core
+INFO-FLOW: Append model draw_speedometer
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: draw_speedometer_dEe draw_speedometer_eOg draw_speedometer_bkb draw_speedometer_cud draw_speedometer_AXILiteS_s_axi draw_speedometer_gmem_m_axi regslice_core draw_speedometer
+INFO-FLOW: To file: write model draw_speedometer_dEe
+INFO-FLOW: To file: write model draw_speedometer_eOg
+INFO-FLOW: To file: write model draw_speedometer_bkb
+INFO-FLOW: To file: write model draw_speedometer_cud
+INFO-FLOW: To file: write model draw_speedometer_AXILiteS_s_axi
+INFO-FLOW: To file: write model draw_speedometer_gmem_m_axi
+INFO-FLOW: To file: write model regslice_core
+INFO-FLOW: To file: write model draw_speedometer
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute         syn_report -model draw_speedometer -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 114.29 MHz
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.tcl 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'draw_speedometer_bkb_rom' using auto ROMs.
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'draw_speedometer_cud_rom' using auto ROMs.
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute           source ./AXILiteS.slave.tcl 
+Execute           is_m_axi_addr64 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Command         ap_source done; 0.36 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.12 sec.
+Command         ap_source done; 0.12 sec.
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=draw_speedometer xml_exists=0
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.rtl_wrap.cfg.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.rtl_wrap.cfg.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.rtl_wrap.cfg.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.tcl 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.tcl 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute           ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Command         ap_source done; 0.19 sec.
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.tcl 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.constraint.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=10
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=6
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=8 #gSsdmPorts=10
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute         get_config_export -xo 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.dataonly.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.dataonly.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute         get_config_sdx -target 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.rtl_wrap.cfg.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.dataonly.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.constraint.tcl 
+Execute         sc_get_clocks draw_speedometer 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute         get_config_debug -directory 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/impl/misc/draw_speedometer_ap_dadd_3_full_dsp_64_ip.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/impl/misc/draw_speedometer_ap_dmul_3_max_dsp_64_ip.tcl 
+Execute         source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute         get_config_sdx -target 
+Execute         get_config_sdx -profile 
+Execute         get_config_rtl -kernel_profile 
+Execute         get_config_rtl -stall_sig_gen 
+Execute         get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 1230.840 ; gain = 800.977 ; free physical = 872 ; free virtual = 5018
+INFO: [VHDL 208-304] Generating VHDL RTL for draw_speedometer.
+INFO: [VLOG 209-307] Generating Verilog RTL for draw_speedometer.
+Command       autosyn done; 6.9 sec.
+Command     csynth_design done; 39.4 sec.
+Execute     export_design -format ip_catalog -vendor vsi.com -version 1.0 
+Execute       get_config_export -acc 
+Execute       get_config_export -clock_margin 
+Execute       get_config_export -custom_script 
+Execute       get_config_export -description 
+Execute       get_config_export -display_name 
+Execute       get_config_export -driver_input_dir 
+Execute       get_config_export -ipname 
+Execute       get_config_export -kernel_drc 
+Execute       get_config_export -library 
+Execute       get_config_export -qor_test 
+Execute       get_config_export -rtl 
+Execute       get_config_export -sdaccel 
+Execute       get_config_export -sim 
+Execute       get_config_export -taxonomy 
+Execute       get_config_export -use_ip 
+Execute       get_config_export -use_netlist 
+Execute       get_config_export -xo 
+Execute       config_export -format=ip_catalog -vendor=vsi.com -version=1.0 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -vendor vsi.com -version 1.0
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -vivado_clock 
+Execute       get_top 
+Execute       get_config_sdx -target 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -sdx-target none
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl both -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl both -sdx-target none -tool Vivado -impltomg_flag
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.11 sec.
+Command       ap_source done; 0.11 sec.
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.tcl 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Command       ap_source done; 0.11 sec.
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.tcl 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute         ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Command       ap_source done; 0.2 sec.
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.tcl 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.constraint.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=10
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=6
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=0 g_has_adaptors=false generate_bd_files=1 #modelList=8 #gSsdmPorts=10
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.dataonly.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.dataonly.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.rtl_wrap.cfg.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.dataonly.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.constraint.tcl 
+Execute       sc_get_clocks draw_speedometer 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/impl/misc/draw_speedometer_ap_dadd_3_full_dsp_64_ip.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/impl/misc/draw_speedometer_ap_dmul_3_max_dsp_64_ip.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       copying IP vlog from /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/impl/vhdl
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=10
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.dataonly.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.compgen.dataonly.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=draw_speedometer
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.rtl_wrap.cfg.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.rtl_wrap.cfg.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.rtl_wrap.cfg.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=draw_speedometer
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.rtl_wrap.cfg.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.rtl_wrap.cfg.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.rtl_wrap.cfg.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.constraint.tcl 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/draw_speedometer.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/.autopilot/db/global.setting.tcl 
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.14 sec.
+Command       ap_source done; 0.14 sec.
+Execute       source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /home/dwq/Documents/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data names -quiet 
+Execute       ap_part_info -name xczu3eg-sbva484-1-e -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec /home/dwq/Documents/Workspace/vsi_dfx_lab/vsi_auto_gen/hls/system_1/u96_pl/speedometer/speedometer/solution1/impl/ip/pack.sh
+Command     export_design done; 34.87 sec.
+Execute     cleanup_all 

@@ -1,0 +1,6 @@
+min_max_shmem_am_cud
+min_max_shmem_cambkb
+min_max_shmem_AXILiteS_s_axi
+min_max_shmem_gmem_m_axi
+regslice_core
+min_max_shmem
